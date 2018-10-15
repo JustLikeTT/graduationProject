@@ -1,0 +1,250 @@
+"Response":
+{
+    "fullTextAnnotation": {
+        "pages": [
+          {
+            "width": ,
+            "height": ,
+            "blocks": [
+              {
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": ,
+                      "y": 
+                    },
+                    {
+                      "x": ,
+                      "y": 
+                    },
+                    {
+                      "x": ,
+                      "y": 
+                    },
+                    {
+                      "x": ,
+                      "y": 
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": ,
+                          "y": 
+                        },
+                        {
+                          "x": ,
+                          "y": 
+                        },
+                        {
+                          "x": ,
+                          "y": 
+                        },
+                        {
+                          "x": ,
+                          "y": 
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": ,
+                              "y": 
+                            },
+                            {
+                              "x": ,
+                              "y": 
+                            },
+                            {
+                              "x": ,
+                              "y": 
+                            },
+                            {
+                              "x": ,
+                              "y": 
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                }
+                              ]
+                            },
+                            "text": "",
+                            "confidence": 
+                          },
+                          {
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                }
+                              ]
+                            },
+                            "text": "",
+                            "confidence": 
+                          },
+                          {
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                }
+                              ]
+                            },
+                            "text": "",
+                            "confidence": 
+                          },
+                          {
+                            "property": {
+                              "detectedBreak": {
+                                "type": ""
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                },
+                                {
+                                  "x": ,
+                                  "y": 
+                                }
+                              ]
+                            },
+                            "text": "",
+                            "confidence": 
+                          }
+                        ],
+                        "confidence": 
+                      }
+                    ],
+                    "confidence": 
+                  }
+                ],
+                "blockType": "",
+                "confidence": 
+              },
+            ]
+          }
+        ],
+        "text": "FPok\nDO\n"
+      },
+    "labelAnnotations": [
+        {
+          "mid": "/m/038hg",
+          "description": "green",
+          "score": 0.9450253,
+          "topicality": 0.9450253
+        },
+    ],
+    "landmark_detection": [
+        {
+            "description": "",
+            "latitude": "",
+            "longitude": "",
+        },
+    ]
+    "logo_detection": {
+        "description": "",
+    }
+    "textAnnotations": [
+        {
+          "locale": "",
+          "description": "",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": ,
+                "y": 
+              },
+            ]
+          }
+        },
+    ],
+    "web_detection": {
+        "web_entities": [
+        {
+            "score": ,
+            "description": "",
+        },
+        ],
+        
+        "pages_with_matching_images": [
+            "url": "",
+            "page_title": "",
+            "full_matching_images": [
+            {
+                "url": "",
+            }
+          ]
+        ],
+        "best_guess_labels":""
+    }
+    "error":
+    "context":
+}
+
+/*
+fullTextAnnotation:
+純文本資料
+
+*/
