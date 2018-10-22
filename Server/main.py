@@ -53,18 +53,22 @@ def receive_img():
         img_b64 = request.form['content']
         img_content = b64decode(img_b64) 
         resurlt_str = vision_analytics(img_content)
-        return resurlt_str
+        return str(resurlt_str)
     else :
         return "request is get but it is nothing"
         
 @app.errorhandler(500)
-def server_error(e):
+def internal_error(e):
     logging.exception('An error occurred during a request.')
     return """
     An internal error occurred: <pre>{}</pre>
     See logs for full stacktrace.
     """.format(e), 500    
 
+@app.errorhandler(404)
+def sever_error(e):
+    logging.exception("Error 404 :".format(e))
+    return "".format(e), 404
 if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
     # application on Google App Engine. See entrypoint in app.yaml.

@@ -10,7 +10,7 @@ def vision_analytics(img_content):
     max_results = 5
     request = {
       "image" : {
-        "content" : b64decode(img_content)
+        "content" : img_content,
         },
       "features" : [
         {
@@ -43,6 +43,16 @@ def vision_analytics(img_content):
 
 if __name__ == '__main__':
 
-    from base64 import b64encode
+    '''from base64 import b64encode
     with open("../picture.PNG","rb") as img:
-        print(vision_analytics(b64encode(img.read())))
+        print(vision_analytics(b64encode(img.read())))'''
+    from base64 import b64encode
+    import requests
+    url = "https://graduation-107.appspot.com/vision"
+    url_local = "http://127.0.0.1:5000/vision"
+
+    with open("../picture.PNG","rb") as img:
+       b_img = b64encode(img.read())
+    data = {'content': b_img}
+    r = requests.post(url_local,data=data)
+    print(r.text)

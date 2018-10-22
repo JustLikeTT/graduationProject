@@ -24,7 +24,7 @@ Return : *string*
 
 Example <br>
 ```	
-request.get(https://graduation-107.appspot.com/translate/cat)
+request.get(https://graduation-107.appspot.com/translation/cat)
 //text = cat
 ````
 ![](translate_result.png)
@@ -32,9 +32,14 @@ request.get(https://graduation-107.appspot.com/translate/cat)
 Parm:
 <br> ***Encode on base64 of image***, but you have use the method "POST" in a request.
 ```python
-from base64 import b64encode
-with open("../picture.PNG","rb") as img:
-print(vision_analytics(b64encode(img.read())))
+	from base64 import b64encode
+    import requests
+	url = "https://graduation-107.appspot.com/vision"    
+    with open("../picture.PNG","rb") as img:
+       b_img = b64encode(img.read())
+    data = {'content': b_img}
+    r = requests.post(url_local,data=data)
+    print(r.text)
 ```
 <br>Return :
 ![](vision_result.png)
